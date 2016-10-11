@@ -29,7 +29,12 @@ h3 {
 }
 
 .copy {
-	padding: 10px;
-	display: none;
+	overflow: auto;
+	max-height:0px;
+	transition: max-height 1s;
+}
+
+.show {
+	max-height: 100px;
 }
 
