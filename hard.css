@@ -75,5 +75,16 @@ img {
 	z-index: 8;	
 }
 
+.opaque {
+	opacity: 1;
+}
+
+.transparent {
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+
+
 
 

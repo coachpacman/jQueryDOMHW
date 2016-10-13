@@ -31,14 +31,16 @@ $(document).ready(function() {
 			`
 		})
 		$("#gallery").html(htmlString)
-		$(".slide:first-child").addClass("current")
+		$(".slide:first-child").addClass("current opqaue")
 	}
 
 	photos()
 
 	$(".rightArrow").on("click", function(e) {
 		var currentNum = $(".current").attr("id")[5]
+		console.log(currentNum)
 		var nextNum = Number(currentNum) + 1
+		console.log(nextNum)
 		if (nextNum === carouselImages.length) {
 			nextNum = 0
 		}
@@ -52,8 +54,8 @@ $(document).ready(function() {
 		if (nextNum === -1) {
 			nextNum = carouselImages.length - 1
 		}
-		$(`#image${currentNum}`).removeClass("current")
-		$(`#image${nextNum}`).addClass("current")	
+		$(`#image${currentNum}`).removeClass("current opaque").addClass("transparent")
+		$(`#image${nextNum}`).addClass("current opaque").removeClass("transparent")	
 	})
 
 	var clearInterval = function() {
