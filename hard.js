@@ -56,6 +56,29 @@ $(document).ready(function() {
 		$(`#image${nextNum}`).addClass("current")	
 	})
 
+	var clearInterval = function() {
+		
+	}
+
+	var next = function() {
+
+	}
+
+	var automate = {
+		 interval: null,
+		 start: function() {
+		   	this.interval = setInterval(function(){
+		    next()
+			}, 3000)
+		 },
+		 stop: function() {
+			clearInterval(this.interval)
+		 },
+		 startOver: function() {
+			this.stop();
+			this.start();
+		}
+	}
 })
 
 
