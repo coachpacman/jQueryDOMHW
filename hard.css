@@ -20,7 +20,13 @@ html {
 	position: absolute;
 	z-index:-1;
 	opacity: 0;
+
+}
+
+.opaque {
+	opacity: 1;
 	transition: opacity 0.5s;
+
 }
 
 .absolute {
@@ -77,9 +83,6 @@ img {
 	z-index: 8;	
 }
 
-.opaque {
-	opacity: 1;
-}
 
 
 
