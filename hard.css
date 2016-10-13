@@ -14,10 +14,10 @@ html {
 	min-width: 100%;
 }
 
-.slideshow {
+.slide {
 	min-width: 100%;
 	min-height: 100%;
-	position: relative;
+	position: absolute;
 	z-index:-1;
 }
 
@@ -36,7 +36,7 @@ img {
 .label {
 	color: #fff;
 	position: absolute;
-	top: 930px;
+	top: 1063px;
 	right: 30px;
 	font-size: 32px;
 	background-color: rgba(0,0,0,.3);
@@ -44,11 +44,11 @@ img {
 
 .rightArrow, .leftArrow {
 	color: white;
-	font-size: 56px;
+	font-size: 150px;
 	background-color: rgba(0,0,0,0.7);
-	height: 80px;
-	width: 56px;
-	padding-left: 13px;
+	height: 250px;
+	width: 100px;
+	padding-top: 30px;
 	position: absolute;
 	opacity: 0.5;
 	transition: opacity .2s;
@@ -72,7 +72,7 @@ img {
 }
 
 .current {
-	z-index: 2;	
+	z-index: 8;	
 }
 
 
