@@ -31,7 +31,7 @@ $(document).ready(function() {
 			`
 		})
 		$("#gallery").html(htmlString)
-		$(".slide:first-child").addClass("current opqaue")
+		$(".slide:first-child").addClass("current opaque")
 	}
 
 	photos()
@@ -44,8 +44,8 @@ $(document).ready(function() {
 		if (nextNum === carouselImages.length) {
 			nextNum = 0
 		}
-		$(`#image${currentNum}`).removeClass("current")
-		$(`#image${nextNum}`).addClass("current")	
+		$(`#image${currentNum}`).removeClass("current opaque")
+		$(`#image${nextNum}`).addClass("current opaque")	
 	})
 
 	$(".leftArrow").on("click", function(e) {

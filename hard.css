@@ -19,6 +19,8 @@ html {
 	min-height: 100%;
 	position: absolute;
 	z-index:-1;
+	opacity: 0;
+	transition: opacity 0.5s;
 }
 
 .absolute {
@@ -77,11 +79,6 @@ img {
 
 .opaque {
 	opacity: 1;
-}
-
-.transparent {
-	opacity: 0;
-	transition: opacity 0.5s;
 }
 
 
