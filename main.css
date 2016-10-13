@@ -14,24 +14,34 @@ html {
 	margin: auto;
 }
 
-div {
-	border: 1px solid black;
-
+.header {
+	background: #00C6D6;
+	padding: 15px;
+	border-bottom: 1px solid #00B4C3;
+	color: #FEFEFE;
 }
 
-.header {
-	background: #ccc;
-	padding: 10px;
+.header:hover {
+	background: #00DAEC;
 }
 
 h3 {
 	margin:0;
+	font-weight: lighter;
+}
+
+p {
+	margin: 23px;
 }
 
 .copy {
 	overflow: auto;
 	max-height:0px;
 	transition: max-height 1s;
+	border-bottom: 1px solid #00B4C3;
+	border-left: 1px solid #00B4C3;
+	border-right: 1px solid #00B4C3;
+	color: #8A736B;
 }
 
 .show {
